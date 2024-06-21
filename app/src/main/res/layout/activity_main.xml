@@ -43,12 +43,13 @@ Please register first"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton2"
+        android:id="@+id/createAccount"
         android:layout_width="256dp"
         android:layout_height="49dp"
         android:layout_marginTop="48dp"
         android:hint="Create Account"
         android:textColorHint="@color/white"
+        android:backgroundTint="@color/blue"
         app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -56,16 +57,18 @@ Please register first"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/Login"
         android:layout_width="256dp"
         android:layout_height="49dp"
         android:layout_marginTop="12dp"
-        android:hint="Create Account"
+        android:backgroundTint="@color/blue"
+        android:hint="Login"
         android:textColorHint="@color/white"
         app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/createAccount" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
