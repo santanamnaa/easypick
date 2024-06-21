@@ -2,6 +2,7 @@ package com.example.easypick
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,21 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val btncreateaccount : Button = binding.createAccount
+        val btnlogin : Button = binding.Login
+
+        btncreateaccount.setOnClickListener {
+            val intent = Intent(this,SignUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnlogin.setOnClickListener {
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
 
 

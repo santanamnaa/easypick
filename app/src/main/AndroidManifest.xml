@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EASYPICK"
         tools:targetApi="31">
+        <activity android:name=".FragmentActivity"
+            android:exported="false"/>
+        <activity android:name=".LoginActivity"
+            android:exported="false"/>
         <activity android:name=".SignUpActivity"
             android:exported="false"/>
         <activity
