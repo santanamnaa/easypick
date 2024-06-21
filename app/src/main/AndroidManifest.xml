@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EASYPICK"
         tools:targetApi="31">
+        <activity android:name=".SignUpActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
