@@ -1,14 +1,9 @@
-package com.example.yourapp
+package com.example.easypick
 
-import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.easypick.R
 
 class ForgetPasswordActivity : AppCompatActivity() {
 
@@ -16,27 +11,16 @@ class ForgetPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.forget_pass1)
 
-        val etEmail: EditText = findViewById(R.id.etEmail)
-        val btnSubmit: Button = findViewById(R.id.btnSubmit)
-        val tvSignIn: TextView = findViewById(R.id.tvSignIn)
+        val emailEditText: EditText = findViewById(R.id.etEmail)
+        val submitButton: Button = findViewById(R.id.btnSubmit)
 
-        tvSignIn.setOnClickListener {
-            // Handle sign in click
-            startActivity(intent)
+        submitButton.setOnClickListener {
+            val email = emailEditText.text.toString()
+            // Handle password reset logic here, e.g., send reset email
+
+            // Navigate to success screen or show success message
+            // val intent = Intent(this, SuccessActivity::class.java)
+            // startActivity(intent)
         }
-
-        etEmail.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-                btnSubmit.isEnabled = !s.isNullOrEmpty()
-                if (btnSubmit.isEnabled) {
-                    btnSubmit.setBackgroundResource(R.drawable.button_background_enabled)
-                } else {
-                    btnSubmit.setBackgroundResource(R.drawable.button_background_disabled)
-                }
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-        })
     }
 }

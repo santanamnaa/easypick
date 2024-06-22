@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.easypick.databinding.ActivityLoginBinding
 
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
@@ -17,19 +18,23 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val btnsignup : TextView = binding.signup
-        btnsignup.setOnClickListener {
-            val intent = Intent(this,SignUpActivity::class.java)
-            startActivity(intent)
-
-        }
-
-
-        val btnlogin : Button = binding.LoginBTN
-        btnlogin.setOnClickListener {
-            val intent = Intent(this,FragmentActivity::class.java)
+        val btnSignup: TextView = binding.signup
+        btnSignup.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
 
+        val btnLogin: Button = binding.LoginBTN
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, FragmentActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Handle Forgot Password click
+        val forgetPassword: TextView = findViewById(R.id.forgetPassword)
+        forgetPassword.setOnClickListener {
+            val intent = Intent(this, ForgetPasswordActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

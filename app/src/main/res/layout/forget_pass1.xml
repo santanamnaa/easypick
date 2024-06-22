@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context="com.example.yourapp.ForgetPasswordActivity"
+    tools:context=".ForgetPasswordActivity"
     >
 
     <TextView
@@ -91,8 +91,7 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/button_background_disabled"
-        android:enabled="false"
+        android:backgroundTint="@color/blue"
         android:text="Submit"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
