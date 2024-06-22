@@ -1,14 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OrderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Header Section -->
     <TextView
+        android:id="@+id/tvHeader"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Order" />
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Booking History"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Order List Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Order Item 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivOrderImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/resto1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvOrderName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Ambrosia  Restaurant"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintEnd_toStartOf="@+id/btnOrderCheck"
+                        app:layout_constraintStart_toEndOf="@+id/ivOrderImage"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvOrderLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="kazi Deiry, Taiger Pass, Chittagong"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        app:layout_constraintEnd_toStartOf="@+id/btnOrderCheck"
+                        app:layout_constraintStart_toEndOf="@+id/ivOrderImage"
+                        app:layout_constraintTop_toBottomOf="@+id/tvOrderName" />
+
+                    <Button
+                        android:id="@+id/btnOrderCheck"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="@color/blue"
+                        android:text="Check"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Order Item 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivOrderImage2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/resto1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvOrderName2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Tava Restaurant"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintEnd_toStartOf="@+id/btnOrderCheck2"
+                        app:layout_constraintStart_toEndOf="@+id/ivOrderImage2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvOrderLocation2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Zakir Hossain Rd, Chittagong"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        app:layout_constraintEnd_toStartOf="@+id/btnOrderCheck2"
+                        app:layout_constraintStart_toEndOf="@+id/ivOrderImage2"
+                        app:layout_constraintTop_toBottomOf="@+id/tvOrderName2" />
+
+                    <Button
+                        android:id="@+id/btnOrderCheck2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="@color/blue"
+                        android:text="Check"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Order Item 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivOrderImage3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/resto1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvOrderName3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Haatkhola"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintEnd_toStartOf="@+id/btnOrderCheck3"
+                        app:layout_constraintStart_toEndOf="@+id/ivOrderImage3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvOrderLocation3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="6 Surson Road, Chittagong"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        app:layout_constraintEnd_toStartOf="@+id/btnOrderCheck3"
+                        app:layout_constraintStart_toEndOf="@+id/ivOrderImage3"
+                        app:layout_constraintTop_toBottomOf="@+id/tvOrderName3" />
+
+                    <Button
+                        android:id="@+id/btnOrderCheck3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="@color/blue"
+                        android:text="Check"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
