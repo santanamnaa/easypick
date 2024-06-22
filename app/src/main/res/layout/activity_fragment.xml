@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
 
     <androidx.fragment.app.FragmentContainerView
@@ -26,10 +27,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:backgroundTint="@color/white"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonNavigation"
+        android:background="@color/white"
         android:layout_width="409dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
