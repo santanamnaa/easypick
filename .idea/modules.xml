@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/EASYPICK.iml" filepath="$PROJECT_DIR$/.idea/modules/EASYPICK.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EASYPICK.app.unitTest.iml" />
     </modules>
   </component>
