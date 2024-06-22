@@ -20,8 +20,14 @@
             android:exported="false"/>
         <activity android:name=".ForgetPasswordActivity"
             android:exported="false"/>
+        <activity android:name=".MainActivity"
+            android:exported="false"/>
+        <activity android:name=".ActivityIntro2"
+            android:exported="false"/>
+        <activity android:name=".ActivityIntro3"
+            android:exported="false"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityIntro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
