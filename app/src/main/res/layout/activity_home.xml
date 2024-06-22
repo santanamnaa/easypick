@@ -286,12 +286,13 @@
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/restaurantImageView"
+                    android:id="@+id/restaurantImageView1"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginEnd="8dp"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/restaurant"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -300,7 +301,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/restaurantNameTextView"
+                        android:id="@+id/restaurantNameTextView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Restaurant Name"
@@ -308,7 +309,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/restaurantLocationTextView"
+                        android:id="@+id/restaurantLocationTextView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -318,7 +319,56 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/bookButton"
+                    android:id="@+id/bookButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue"
+                    android:text="Book"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/restaurantImageView2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/restaurant"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/restaurantNameTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Restaurant Name"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restaurantLocationTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Location"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bookButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/blue"
@@ -339,55 +389,8 @@
                     android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginEnd="8dp"
-                    android:scaleType="centerCrop" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/restaurantNameTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Restaurant Name"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/restaurantLocationTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Location"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="14sp" />
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/bookButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/blue"
-                    android:text="Book"
-                    android:textColor="@android:color/white" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                android:padding="8dp">
-
-                <ImageView
-                    android:id="@+id/restaurantImageView"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="8dp"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/restaurant"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
