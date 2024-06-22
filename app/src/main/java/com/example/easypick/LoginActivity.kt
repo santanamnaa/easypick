@@ -22,12 +22,13 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this,SignUpActivity::class.java)
             startActivity(intent)
 
-            val btnlogin : Button = binding.LoginBTN
-            btnlogin.setOnClickListener {
-                val a = Intent(this,FragmentActivity::class.java)
-                startActivity(a)
-            }
+        }
 
+
+        val btnlogin : Button = binding.LoginBTN
+        btnlogin.setOnClickListener {
+            val intent = Intent(this,FragmentActivity::class.java)
+            startActivity(intent)
         }
 
     }
