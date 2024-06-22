@@ -32,10 +32,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        fun openLocationInMaps(view: android.view.View) {
-            val intent = Intent(this, MapsActivity::class.java)
-            startActivity(intent)
-        }
+
 
 
 

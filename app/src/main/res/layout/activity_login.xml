@@ -100,20 +100,19 @@
         android:id="@+id/materialButton"
         android:layout_width="183dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="128dp"
         android:backgroundTint="#F3F9FA"
         android:hint="Google"
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="136dp"
         app:layout_constraintBottom_toBottomOf="@+id/materialButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/materialButton"
