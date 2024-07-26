@@ -5,7 +5,8 @@ EasyPick is an application designed to make reservations at any restaurant seaml
 
 ## Design
 
-The design of the EasyPick project can be viewed [here](https://www.figma.com/design/3oazEPZMMeYiExvPH7qM3F/Untitled?node-id=0-1&t=fmEvuRw8Iw6bgrmW-0).
+The design of the EasyPick project can be viewed here:
+![alt_text](https://github.com/santanamnaa/easypick/blob/main/easy-pick-app-design.png)
 
 ## Table of Contents
 
