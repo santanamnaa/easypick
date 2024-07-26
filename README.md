@@ -17,4 +17,6 @@ Notifications: Receive confirmations and reminders for your reservations.
 Reviews and Ratings: Check restaurant reviews and ratings before making a reservation.
 
 # Installation
-``` git clone https://github.com/yourusername/easypick.git ```
+```sh
+git clone https://github.com/yourusername/easypick.git
+```
