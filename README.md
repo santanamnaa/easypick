@@ -18,5 +18,5 @@ Reviews and Ratings: Check restaurant reviews and ratings before making a reserv
 
 # Installation
 ```sh
-git clone https://github.com/yourusername/easypick.git
+git clone https://github.com/santanamnaa/easypick.git
 ```
