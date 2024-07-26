@@ -1,6 +1,7 @@
 # EasyPick
 
 EasyPick is an application designed to make reservations at any restaurant seamlessly. With an intuitive user interface and robust backend support, EasyPick aims to simplify the process of booking a table at your favorite dining spots.
+![alt_text](https://github.com/santanamnaa/easypick/blob/main/EasyPick.png)
 
 ## Design
 
